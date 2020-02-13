@@ -21,7 +21,7 @@ public class TemplateItem {
 	private Template template;
 	
 	@ManyToOne
-	@JoinColumn(name = "itemId")
+	@JoinColumn(name = "item_id")
 	private Item item;
 	
 	@Column(name = "quantity")
