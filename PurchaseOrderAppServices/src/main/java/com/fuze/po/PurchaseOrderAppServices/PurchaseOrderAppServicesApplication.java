@@ -10,6 +10,7 @@ public class PurchaseOrderAppServicesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PurchaseOrderAppServicesApplication.class, args);
+		System.out.println("PO Service Started");
 	}
 
 }

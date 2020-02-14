@@ -10,12 +10,18 @@ public class PurchaseOrderController {
 	public String firstPage() {
 		return "Welcome";
 	}
-	@RequestMapping("/")
+	@RequestMapping("/index")
 	public String WelcomePage() {
 		return "index";
 	}
-	
-	
-		
+	@RequestMapping("/")
+	public String LoginPage() {
+		return "login";
+	}
+	@RequestMapping("/PORequest")
+	public String porequest() {
+		return "PORequest";
+	}
 
+	
 }
