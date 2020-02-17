@@ -13,7 +13,7 @@ public class PurchaseOrderController {
 	}
 	@GetMapping("/")
 	public String WelcomePage() {
-		return "index";
+		return "Home";
 	}
 	
 	@GetMapping("/templates")
