@@ -3,15 +3,16 @@
  */
 package com.fuze.po.test;
 
-import org.junit.Test;
-
-import com.fuze.po.Library;
-
-import static org.junit.Assert.*;
-
-public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
-}
+/*
+ * import org.junit.Test;
+ * 
+ * import com.fuze.po.Library;
+ * 
+ * import static org.junit.Assert.*;
+ * 
+ * public class LibraryTest {
+ * 
+ * @Test public void testSomeLibraryMethod() { Library classUnderTest = new
+ * Library(); assertTrue("someLibraryMethod should return 'true'",
+ * classUnderTest.someLibraryMethod()); } }
+ */

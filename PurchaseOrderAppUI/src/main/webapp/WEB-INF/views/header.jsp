@@ -106,6 +106,14 @@
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
               </div>
             </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="POViewCart">
+                <i class="fa fa-cart-plus"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">2</span>
+              </a>
+              </div>
+            </li>
 
             <!-- Nav Item - Messages -->
 
@@ -184,6 +192,12 @@
 				role="button" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false"> Reports <!-- Counter - Alerts --> <!-- <span class="badge badge-danger badge-counter">3+</span> -->
 			</a> <!-- Dropdown - Alerts --></li>
+			
+			<li class="nav-item dropdown no-arrow mx-1"><a
+				class="nav-link dropdown-toggle" href="POsList" id="alertsDropdown"
+				role="button"> PO's List </a>
+			</li>
+			
 		</ul>
 
 	</nav>
