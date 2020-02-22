@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fuze.po.PurchaseOrderAppServices.info.EQuoteInfo;
 import com.fuze.po.PurchaseOrderAppServices.info.TemplateInfo;
 import com.fuze.po.PurchaseOrderAppServices.info.TemplateItemInfo;
 import com.fuze.po.PurchaseOrderAppServices.service.TemplateService;
@@ -23,13 +24,23 @@ public class TemplateController {
 	@Autowired
 	private TemplateService templateService;
 	
-	@GetMapping("/all")
+	@GetMapping("/tempList")
 	public ResponseEntity<List<TemplateInfo>> getTemplateList() {
 		return new ResponseEntity<List<TemplateInfo>>(templateService.templateList(), HttpStatus.OK);
 	}
 	
-	@GetMapping("/import/{tempId}")
+	@GetMapping("/tempImport/{tempId}")
 	public ResponseEntity<List<TemplateItemInfo>> importTemplateItems(@PathVariable final int tempId) {
+		return new ResponseEntity<List<TemplateItemInfo>>(templateService.getTemplateItems(tempId), HttpStatus.OK);
+	}
+	
+	@GetMapping("/eQuotes")
+	public ResponseEntity<List<EQuoteInfo>> getEQuoteList() {
+		return new ResponseEntity<List<EQuoteInfo>>(templateService.getEQuoteList(), HttpStatus.OK);
+	}
+	
+	@GetMapping("/eQuoteImport/{eQuoteId}")
+	public ResponseEntity<List<TemplateItemInfo>> importEQuoteItems(@PathVariable final int tempId) {
 		return new ResponseEntity<List<TemplateItemInfo>>(templateService.getTemplateItems(tempId), HttpStatus.OK);
 	}
 }
